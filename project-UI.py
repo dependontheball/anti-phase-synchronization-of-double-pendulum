@@ -86,6 +86,7 @@ h2.delete(0,END)
 h2.insert(0,0.00001)
 
 def mainprocess():
+    save()
     #define solution
     q1D = 0
     q2D = 0
@@ -202,7 +203,6 @@ def mainprocess():
     plt.title('doubleOsSyn')
     plt.legend()
     fig.set_size_inches(20, 6)
-    fig.savefig('test1png.png', dpi=100)
     plt.show()
 
     fig = plt.gcf()
@@ -214,7 +214,6 @@ def mainprocess():
     plt.title('doubleOsSyn')
     plt.legend()
     fig.set_size_inches(20, 6)
-    fig.savefig('test1png.png', dpi=100)
     plt.show()
 
 def save():
@@ -263,21 +262,17 @@ def clear():
     frame2.delete(0,END)
     h2.delete(0,END)
 
-#def button():
-btn1=Button(text="save",command=save)       
-btn1.grid(row=10,column=0)
 btn2=Button(text="reset",command=reset)
 btn2.grid(row=10,column=1)
 btn3=Button(text="Clear",command=clear)
 btn3.grid(row=10,column=2)
-btn3=Button(text="GO!",command=mainprocess)
-btn3.grid(row=11,column=1)
+btn3=Button(text="plot",command=mainprocess)
+btn3.grid(row=10,column=0)
 
 #def h_pre_define():
 info1= Label(root,text=" ",fg="black",font=20)
 info1.grid(row=12,column=0)
-info2= Label(root,text="press save then GO!",fg="black",font=20)
-info2.grid(row=13,column=0)
+
 
 #กำหนดหน้าจอและตำแหน่งหน้าจอ
 root.geometry("500x400+100+0")
