@@ -274,7 +274,6 @@ btn3.grid(row=10,column=0)
 info1= Label(root,text=" ",fg="black",font=20)
 info1.grid(row=12,column=0)
 
-
 #กำหนดหน้าจอและตำแหน่งหน้าจอ
 root.geometry("500x400+100+0")
 
