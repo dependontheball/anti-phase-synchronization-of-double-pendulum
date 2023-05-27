@@ -5,6 +5,7 @@ from pyexpat.model import XML_CTYPE_EMPTY
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 root = Tk()
 m_pre=DoubleVar()
